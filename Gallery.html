@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EcoVerso</title>
+    <link rel="stylesheet" href="Gallery/style.CSS" />
+    <link rel="stylesheet" href="Gallery/mainStyle (2).css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="row">
+        <div>
+          <span class="logo">
+            <img src="../Gallery/Images/img1.png" alt="" class="logo"
+          /></span>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feedbackform.html">Feedback</a></li>
+            <li><a href="profile.html">User Profile</a></li>
+            <li><a href="sitemap.html">SiteMap</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li>
+              <a href="Gallery.html" class="active">Gallery</a>
+            </li>
+            <li><a href="team.html">Our Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="slide">
+        <div
+          class="item"
+          style="
+            background-image: url(Gallery/Images/shopping-bags-on-the-handlebar-of-bicycle.jpg);
+          "
+        >
+          <div class="content">
+            <div class="name">Sustainable Consumption</div>
+            <div class="des">
+              Sustainable consumption is about using goods and services in a way
+              that minimizes impact on the environment while improving quality
+              of life.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background-image: url(Gallery/Images/girl_organizing_recycling_bins_565878657.webp);
+          "
+        >
+          <div class="content">
+            <div class="name">Recycling Practices</div>
+            <div class="des">
+              Promoting recycling can help us move towards more sustainable
+              consumption and production patterns.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(Gallery/Images/farmer-field-land.jpg)"
+        >
+          <div class="content">
+            <div class="name">Sustainable Agriculture</div>
+            <div class="des">
+              Sustainable agriculture practices can significantly reduce our
+              environmental footprint.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(Gallery/Images/large.jpeg)"
+        >
+          <div class="content">
+            <div class="name">Energy Efficiency</div>
+            <div class="des">
+              Improving energy efficiency is crucial for achieving sustainable
+              consumption and production patterns.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(Gallery/Images/jqwzkchlhoc.jpg)"
+        >
+          <div class="content">
+            <div class="name">Water Conservation</div>
+            <div class="des">
+              Water conservation is an important aspect of sustainable
+              consumption and production.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background-image: url(Gallery/Images/Biodegradable-Polymers-1140x748.webp);
+          "
+        >
+          <div class="content">
+            <div class="name">Eco-freindly Products</div>
+            <div class="des">
+              Eco-friendly products are goods that are made in a way that
+              minimizes harm to the environment.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-content">
+        <img src="../Gallery/Images/img1.png" alt="" class="logo-footer" />
+        <div class="footer-links quick-links">
+          <h2>links</h2>
+          <a href="profile.html">User Profile</a>
+          <a href="shop.html">Shop</a>
+          <a href="Gallery.html">Gallery</a>
+          <a href="team.html">Our team</a>
+        </div>
+
+        <div class="footer-links social-links">
+          <h2>Social</h2>
+          <div class="ss">
+            <li>
+              <a href="https://www.linkedin.com"
+                ><i class="fab fa-linkedin fa-2x" style="color: #071c21"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://web.facebook.com"
+                ><i class="fab fa-facebook fa-2x" style="color: #071c21"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><i class="fab fa-instagram fa-2x" style="color: #071c21"></i
+              ></a>
+            </li>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <hr />
+      <p class="copyright">&copy; 2024 EcoVerso. All Rights Reserved.</p>
+    </div>
+    <script>
+      let next = document.querySelector(".next");
+      let prev = document.querySelector(".prev");
+
+      next.addEventListener("click", function () {
+        let items = document.querySelectorAll(".item");
+        document.querySelector(".slide").appendChild(items[0]);
+      });
+
+      prev.addEventListener("click", function () {
+        let items = document.querySelectorAll(".item");
+        document.querySelector(".slide").prepend(items[items.length - 1]); // here the length of items = 6
+      });
+    </script>
+  </body>
+</html>

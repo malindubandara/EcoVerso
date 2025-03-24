@@ -1,0 +1,134 @@
+body{
+    margin-top: 40px;
+    height: 100%;
+    background-color: #46A094;
+}
+
+h1,
+h2 {
+  font-family: "Fira Code", monospace;
+}
+p {
+  font-family: 'poppins', sans-serif;
+}
+
+.pageeditor{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #46A094;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.heading h1 {
+    margin-top: 50px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 4rem;
+    color: #003049;
+}
+
+.heading h3 {
+  margin-top: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  color: #003049;
+  line-height: 3px;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.head-details{
+    margin-top: 100px;
+}
+
+.Main-page{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.Main-page h2 {
+    font-size: 2rem;
+    color: #003049;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Main-page ul {
+    list-style-type: none;
+    color: #003049;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.Main-page li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+.navigation-b{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.navigation-b h2{
+    font-size: 2rem;
+    color: #003049;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation-b ul {
+    list-style-type: none;
+    color: #003049;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.navigation-b li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+.feedform{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.feedform h2{
+    font-size: 1.8rem;
+    color: #003049;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feedform ul {
+    list-style-type: none;
+    color: #003049;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.feedform li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+.pageeditor a{
+    color: brown;
+}
+
+.contents{
+    display: flex;
+    gap: 50px;
+}

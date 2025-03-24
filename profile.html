@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Profile Page/style.css">
+    <link rel="stylesheet" href="Profile Page/assets/nav-footer.css">
+    <script src="https://kit.fontawesome.com/5cc4f9cede.js" crossorigin="anonymous"></script>
+    <script src="Profile Page/scripts.js" defer></script>
+    <title>User Profile</title>
+</head>
+
+<body>
+    <!-- Nav bar-->
+    <nav>
+        <div class="row">
+            <div>
+                <span class="logo"> <img src="Team Page/assets/Logo.png" alt="" class="logo"></span>
+
+                <ul>
+                    <li> <a href="../index.html">Home</a></li>
+                    <li><a href="../feedbackform.html">Feedback</a></li>
+                    <li><a href="../profile.html" class="active">User Profile</a></li>
+                    <li><a href="../sitemap.html">SiteMap</a></li>
+                    <li><a href="../shop.html">Shop</a></li>
+                    <li><a href="../Gallery.html">Gallery</a></li>
+                    <li><a href="../team.html">Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="form">
+        <h1 class="text-center" id="form-title"></h1>
+        <!-- Progress bar -->
+        <div class="progressbar">
+            <div class="completion-rate">Completion Rate: 0%</div>
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <!-- Steps -->
+        <div class="form-step form-step-active" data-category="personal-details" data-index="0">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="">
+                <a href="#" class="btn btn-next width-50 ml-auto ">Next</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="personal-details" data-index="1">
+            <div class="input-group">
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="personal-details" data-index="2">
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="personal-details" data-index="3">
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="personal-details" data-index="4">
+            <div class="input-group">
+                <label for="terms">Agree with privacy terms</label>
+                <select name="terms" id="terms">
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="volunteering-tasks" data-index="0">
+            <div class="input-group">
+                <label for="rational">What brings you to this cause</label>
+                <input type="text" name="rational" id="rational">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="volunteering-tasks" data-index="1">
+            <div class="input-group">
+                <label for="doa">DoA</label>
+                <input type="text" name="doa" id="doa">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="volunteering-tasks" data-index="2">
+            <div class="input-group">
+                <label for="task">Task</label>
+                <input type="text" name="task" id="task">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="volunteering-tasks" data-index="3">
+            <div class="input-group">
+                <label for="place">Place</label>
+                <input type="text" name="place" id="place">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="volunteering-tasks" data-index="4">
+            <div class="input-group">
+                <label for="assignment">Assignment Type</label>
+                <input type="text" name="assignment" id="assignment">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="qualifications" data-index="0">
+            <div class="input-group">
+                <label for="areaOfStudy">Area of Study</label>
+                <input type="text" name="areaOfStudy" id="areaOfStudy">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="qualifications" data-index="1">
+            <div class="input-group">
+                <label for="degree">Highest Degree</label>
+                <input type="text" name="degree" id="degree">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="qualifications" data-index="2">
+            <div class="input-group">
+                <label for="uni">University/Institution</label>
+                <input type="text" name="uni" id="uni">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="qualifications" data-index="3">
+            <div class="input-group">
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="qualifications" data-index="4">
+            <div class="input-group">
+                <label for="year">Completion Year</label>
+                <input type="number" name="year" id="year">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="availability" data-index="0">
+            <div class="input-group">
+                <label for="hours">Min Hours per Week</label>
+                <input type="number" name="hours" id="hours">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="availability" data-index="1">
+            <div class="input-group">
+                <label for="surname2">Surname</label>
+                <input type="text" name="surname2" id="surname2">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="availability" data-index="2">
+            <div class="input-group">
+                <label for="telephone">Telephone Number</label>
+                <input type="tel" name="telephone" id="telephone">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-next">Next</a>
+                <a href="#" class="btn btn-skip">Skip</a>
+            </div>
+        </div>
+        <div class="form-step" data-category="availability" data-index="3">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="submit-btn-wrapper">
+                <a href="#" class="btn">Submit</a>
+            </div>
+        </div>
+    </div>
+    <div class="answers-section" style="display: none;">
+        <h2>Your Answers</h2>
+        <div id="answers-list">
+            <!-- Personal Details Inputs -->
+            <div class="completed-category-inputs active-inputs" id="personal-details-inputs" style="display: none;">
+                <p>Name: <span id="name-value"></span></p>
+                <p>Surname: <span id="surname-value"></span></p>
+                <p>Age: <span id="age-value"></span></p>
+                <p>Gender: <span id="gender-value"></span></p>
+                <p>Agree with privacy terms: <span id="privacy-value"></span></p>
+            </div>
+
+            <!-- Volunteering Tasks Inputs -->
+            <div class="completed-category-inputs" id="volunteering-tasks-inputs" style="display: none;">
+                <p>Rational: <span id="rational-value"></span></p>
+                <p>DoA: <span id="DoA-value"></span></p>
+                <p>Task <span id="task-value"></span></p>
+                <p>Place: <span id="place-value"></span></p>
+                <p>Assignment type: <span id="assignment-value"></span></p>
+            </div>
+
+            <!-- Qualifications Inputs -->
+            <div class="completed-category-inputs" id="qualifications-inputs" style="display: none;">
+                <p>Area of study: <span id="areastudy-value"></span></p>
+                <p>Highest degree: <span id="degree-value"></span></p>
+                <p>University/Institution: <span id="uni-value"></span></p>
+                <p>Completion year: <span id="year-value"></span></p>
+                <p>Country: <span id="country-value"></span></p>
+            </div>
+
+            <!-- Availability Inputs -->
+            <div class="completed-category-inputs" id="availability-inputs" style="display: none;">
+                <p>Availability for volunteering: <span id="availability-value"></span></p>
+                <p>Surname: <span id="surname2-value"></span></p>
+                <p>Tel.: <span id="telephone-value"></span></p>
+                <p>Email: <span id="email-value"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="skipped-questions-section" style="display: none;">
+        <h2>Skipped Questions</h2>
+        <div id="skipped-questions-list"></div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <img src="assets/Logo.png" alt="" class="logo-footer">
+            <div class="footer-links quick-links">
+                <h2>links</h2>
+                <a href="profile.html">User Profile</a>
+                <a href="shop.html">Shop</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="team.html">Our team</a>
+            </div>
+
+            <div class="footer-links social-links">
+                <h2>Social</h2>
+                <div class="ss">
+                    <li>
+                        <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://web.facebook.com"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    </li>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>

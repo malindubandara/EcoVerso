@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #46a094;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  /* min-height: 100vh; */
+  background-color: #f3f3f3;
+}
+
+/* Global Styling */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+/* Next Button */
+.width-50 {
+  width: 50%;
+}
+
+.ml-auto {
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Progressbar */
+.progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 4rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 10px;
+  width: 100%;
+  background-color: #d6d6d6;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.progress {
+  background: var(--primary-color);
+  width: 0%;
+  transition: 0.3s;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #d6d6d6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+.progress-step::after {
+  content: attr(data-titles);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progress-step-active {
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+  transition: 0.5s;
+}
+
+/* Form */
+.form {
+  width: clamp(320px, 30%, 430px);
+  margin: 0 auto;
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 10px #a2cea5;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.form-step {
+  display: none;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+.form-step-active {
+  display: block;
+}
+
+.input-group {
+  margin: 2rem 0;
+  margin-top: 0;
+}
+
+/* Button */
+.btns-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+  text-align: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+.submit-btn-wrapper {
+  justify-content: center;
+}
+
+.completion-rate {
+  text-align: center;
+  font-size: 0.9375rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.answers-section {
+  padding: 20px;
+}
+
+.answers-section h2 {
+  margin-bottom: 10px;
+}
+
+.completed-category-inputs {
+  margin-bottom: 20px;
+}
+
+.completed-category-inputs p {
+  margin: 5px 0;
+}
+
+#answers-list {
+  background-color: #f3f3f3;
+  width: auto;
+  height: auto;
+}
+
+.skipped-questions-section {
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 0.25rem;
+  margin-top: 20px;
+}

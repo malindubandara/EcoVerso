@@ -1,0 +1,48 @@
+/* content page */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* content page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfe4e3;
+    color: #333;
+}
+h2, h1{
+    font-size: 30px;
+}
+
+header {
+    background-color: #C4E8C2;
+    color: #070707;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+.para1 {
+    padding: 30px;
+    font-size: 25px;
+}
+
+.para2 {
+    padding: 30px;
+    font-size: 25px;
+}
+
+.para3 {
+    padding: 30px;
+    font-size: 25px;
+}
+
+.para4 {
+    padding: 30px;
+    font-size: 25px;
+}

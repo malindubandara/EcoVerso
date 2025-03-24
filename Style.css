@@ -1,0 +1,444 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #dfe4e3;
+}
+
+.content{
+    text-align: center;
+    align-items: center;
+}
+
+
+/* landing */
+.landing-page {
+    width: 100%;
+    height: 100vh; 
+    background-image: url(./images/Artboard\ 1.jpg);
+    background-size: cover; 
+    background-position: center; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-page .landing-txt{
+    max-width: 500px;
+    float: left;
+    text-align: left;
+    margin-left: 150px;
+}
+
+.landing-txt .p-text {
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+
+/* typewriter effect */
+.main-text {
+    color: #003049;
+    font-size: 5.0em;
+    font-weight: 900;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .10em; 
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(5, 30, 75) }
+}
+
+.view-team-btn{
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    border:solid 2px #46A094;
+    color: #46A094;
+    padding: 10px;
+
+    font-weight: 500;
+    border-radius: 0.5em;
+}
+
+.view-team-btn:hover{
+    color: #faf6f3;
+    background-color: #003049;
+    font-weight: bold;
+}
+
+span{
+    color: #46A094;
+}
+
+
+/* Resources 1 & 2 */
+.resources{
+    padding: 80px 0px;
+    display: inline-block;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resources h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.resource-feature-cards .resource{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 50px;
+    align-items: center;
+}
+
+.resource img{
+    height: 500px;
+    margin-right: 100px;
+}
+
+.card-des {
+    text-align: justify;
+    width: 950px;
+    margin-left: 480px;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-description{
+    text-align: center;
+    width: 950px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+
+/* shop */
+.shop{
+    padding: 80px 0px;
+    background-color: #46A094 ;
+    width: 100%;
+}
+
+.shop-sec{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.shopnow-btn{
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    border:solid 2px #003049;
+    color: #003049;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 0.5em;
+    margin-top: 50px;
+    margin-left: 910px;
+}
+
+.shopnow-btn:hover{
+    color: #ffffff;
+    background-color: #003049;
+    font-weight: bolder;
+    font-size: 15px;
+}
+ 
+.shop h1{
+    text-align: center;
+    color: #003049;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+/* advocate */
+.advocate{
+    width: 100%;
+    background-color: #46A094 ;
+    padding: 80px 0px;
+
+}
+
+.advocate h1{
+    color: #eae2b7;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.advocate .content p{
+    color: #d8d3d3;
+    font-size: 1.5em;
+}
+
+.advocate-cards{
+    margin-top: 40px;
+}
+
+.advocate-cards div{
+    background-color: #faf6f3;
+    display: inline-block;
+    padding:20px 10px;
+    border-radius: 0.5rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.advocate-cards div img{
+    height: 50px;
+    width: 50px;
+    border: solid 3px #003049;
+    border-radius: 4em;
+    padding: 2px;
+}
+
+.content .advocate-cards .card-description{
+    color: black;
+    max-width: 300px;
+}
+
+.readmore-btn{
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    border:solid 2px #003049;
+    color: #003049;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 0.5em;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.readmore-btn:hover{
+    color: #ffffff;
+    background-color: #003049;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+
+/* links to other content section */
+.other-pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 50px; 
+    justify-content: center; 
+    justify-items: center;
+}
+  
+.grid-item {
+    max-width: 200px; 
+    max-height: 200px; 
+}
+  
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* form */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.form-container p{
+    color: red;
+}
+
+.form-container h1 {
+    color: #46A094;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.form-group #name, #email, textarea, select {
+    align-items: center;
+    padding: 5px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.form-group input[type="radio"], input[type="checkbox"] {
+    text-align: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.satisfaction-rating {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.satisfaction-rating label {
+    margin-right: 10px;
+    margin-left: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.form-group input[type="submit"] {
+    background-color: #46A094;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 25%;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: dar#46A094;
+    text-align: center;
+    align-items: center;
+}
+
+.form-group .flex-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.radio-flex input[type="radio"]{
+    margin-right: 5px;
+}
+
+.form-group #improvements {
+    margin-top: 15px;
+    padding: 15px;
+    width: 40%;
+}
+
+.form-group #updates{
+    width: 23%;
+    margin-top: 15px;
+}
+
+.form-group #questions{
+    margin-top: 15px;
+    padding: 15px;
+    width: 40%;
+    height: 70px;
+}
+
+.form-group #labels{
+    margin-top: 35px;
+}
+
+.form-group .radio-label {
+    margin-left: 20px;
+}
+
+/* Splash screen styles */
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #313131; /* Background color of splash screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999; /* Ensure the splash screen is on top of everything */
+    animation: fadeInOut 3s ease forwards; /* Apply fade-in and fade-out animation */
+    opacity: 0; /* Start with zero opacity */
+}
+
+.splash-content {
+    text-align: center;
+}
+
+/* Additional styles for content */
+.splash-content h1 {
+    font-size: 2rem;
+    color: #31d48e; /* Text color */
+    margin-bottom: 20px;
+}
+
+.splash-content p {
+    font-size: 1rem;
+    color: #b5bac5; /* Text color */
+    max-width: 800px;
+}
+
+/* Fade-in and fade-out animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Start with zero opacity */
+    }
+    10% {
+        opacity: 1; /* Quickly fade in */
+    }
+    90% {
+        opacity: 1; /* Remain visible */
+    }
+    100% {
+        opacity: 0; /* Fade out completely */
+    }
+}
+
+
+

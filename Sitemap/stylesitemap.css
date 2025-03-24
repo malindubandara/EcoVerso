@@ -1,0 +1,57 @@
+.container {
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sitemap {
+    text-align: center;
+}
+
+.link_button {
+    cursor: pointer;
+    fill: #cccccc;
+    transition: fill 0.3s ease;
+}
+
+.link_button:hover {
+    fill: #46A094;
+}
+
+.link_txt {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #0056b3;
+    text-align: center;
+    align-items: center;
+}
+
+.link_txt:hover {
+    fill: #f3f3f3; /* Change fill color on hover */
+}
+
+.sitemap-line {
+    stroke: #cccccc;
+    stroke-width: 2;
+}
+
+.editor-btn {
+    margin-top: 20px;
+}
+
+.editor-btn a {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.editor-btn a:hover {
+    background-color: #0056b3;
+}

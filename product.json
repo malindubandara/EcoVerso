@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "Wall Hook",
+        "price": 120,
+        "image": "img/wall_hooks.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Natural Grass Bud Vase",
+        "price": 220,
+        "image": "img/bud vase.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Handmade Rattan Storage Trunk ",
+        "price": 250,
+        "image": "img/Handmade Rattan Storage Trunk.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Arch Rattan Ladder",
+        "price": 135,
+        "image": "img/Arch Rattan Ladder.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Minimal Stoneware Vase",
+        "price": 54,
+        "image": "img/stoneware vase.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Horizing Basket",
+        "price": 115,
+        "image": "img/horizing_basket.jpg"
+    }
+]

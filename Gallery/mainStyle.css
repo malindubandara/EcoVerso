@@ -1,0 +1,147 @@
+
+h1,h2 {
+  font-family: "Fira Code", monospace;
+}
+p {
+  font-family: 'poppins', sans-serif;
+
+}
+
+/* body color */
+body {    
+  background-color: rgb(223, 225, 227);
+}
+
+
+/* nav bar */
+nav {
+
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 96%;
+  overflow: hidden;
+  z-index: 999;
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  
+}
+
+nav a.active {
+  background: #46A094;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 10px 15px;
+}
+
+nav a.active:hover {
+  color: #003049;
+  border-bottom: solid #003049 2px;
+}
+
+nav a:hover {
+  color: #003049;
+  border-bottom: solid #003049 2px;
+}
+
+nav ul {
+  text-align: center;
+  vertical-align: top;
+  padding-top: 5px ;
+  padding-right: 50px;
+  float: right;
+}
+  
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 7px;
+  color: #46A094;
+  text-align: center;
+}
+  
+  
+  
+  
+  /* logo */
+.logo {
+  flex: 0 1 auto;
+  margin-right: auto;
+  height: 45px;
+  margin: 10px;
+  padding-left: 20px;
+}
+
+
+  
+  /* footer */
+.footer {
+  border-radius: 10px;
+  background-color: rgb(243, 247, 247);
+  padding: 20px 40px;
+  margin-top: 20px;
+  margin-left: 0px !important;
+}
+
+.logo-footer {
+  width: 250px;
+  margin: 0px 80px;
+  padding-right: 50px;
+}
+
+.quick-links {
+  padding-right: 0px; 
+}
+
+.footer-content {
+  padding-bottom: 20px;
+}
+
+.footer-links {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+
+
+.footer-links h2 {
+  font-size: 17px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 17px;
+  font-family: 'poppins',sans-serif;  
+}
+  
+.social-links {
+  float: right;
+}
+
+.ss li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.ss li:last-child {
+  margin-right: 0;
+}
+  
+.ss a {
+  text-decoration: none;
+}
+
+.copyright {
+  color: #919496;
+  text-align: center;
+}
